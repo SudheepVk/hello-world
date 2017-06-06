@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
 
+<div ng-app="vk" ng-controller="vks">
+Number 1 <input type="number" ng-model="one"><br/>
+Number 2 <input type="number" ng-model="two"><br/>
+Number 3 <input type="number" ng-model="three"><br/>
+Number 4 <input type="number" ng-model="four"><br/>
+Number 5 <input type="number" ng-model="five"><br/>
+Number 6 <input type="number" ng-model="six"><br/>
+Total: {{ ((one+two+three+four+five+six)/6) }}%
+  
+</div>
+
+
+<script>
+var app=angular.module("vk",[]);
+
+app.controller("vks", function($scope)
+{
+ $scope.ini="vk1";
+ $scope.init="vks1";
+});
+</script>
+</body>
+</html>
